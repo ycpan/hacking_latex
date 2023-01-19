@@ -1,6 +1,6 @@
 # mac使用
 ## 一、软件安装
-1. Tex Live（首选）
+### Tex Live（首选）
 官方网站[]（https://www.tug.org/mactex/）
 中文镜像网站[]（https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/）
 mac安装后会有几个工具:   
@@ -9,7 +9,7 @@ mac安装后会有几个工具:
 3. Tex Live Unity管理包的。   
 4. TexShop，编辑器。   
 
-2. MiKTeX（CTeX 套装是 MiKTeX 的重新打包，宏包自动安装的功能也继承于它）
+###  MiKTeX（CTeX 套装是 MiKTeX 的重新打包，宏包自动安装的功能也继承于它）
 ## 二、编译工具介绍
 1. 预备知识    
 TeX：一种宏语言。
