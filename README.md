@@ -1,10 +1,10 @@
 # mac使用
-## 软件安装
+## 一、软件安装
 1. Tex Live(首选)
 官方网站[](https://www.tug.org/mactex/)
 中文镜像网站[](https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/)
 2. MiKTeX（CTeX 套装是 MiKTeX 的重新打包，宏包自动安装的功能也继承于它）
-## 编译工具介绍
+## 二、编译工具介绍
 1. 预备知识    
 TeX：一种宏语言。
 Plain Tex：Tex中的一个最基本的宏集合与TeX的基础语言构成的一种格式。   
@@ -18,11 +18,11 @@ xetex:TeX语言的新的实现，针对plain tex格式。
 xelatex:TeX语言的新的实现，即把Tex语言转换为排版的一个新程序。支持Unicode 编码和直接访问操作系统字体。针对latex格式。     
 备注:pdfLaTeX是比较原始的版本，对Unicode的支持不是很好，所以显示汉字需要使用CJK宏包。它不支持操作系统的truetype字体(ttf)，只能使用type1字体。优点是支持的宏包比较多，有些老一点的宏包必须用pdfLaTeX来编译。     
 XeLaTeX是新的Unicode版本，内建支持Unicode(UTF-8)，自然也包括汉字在内，而且可以调用操作系统的truetype字体。如果你的文档有汉字，那么推荐用XeLaTeX。缺点是不支持某一些宏包。     
-3.文献引用    
+3. 文献引用    
 biblatex 有两种后端可以使用，分别是bibtex和biber。    
 两者的基本信息是一致的，只是biber后端多了一些附加的输出。    
 
-## 中文文本处理
+## 三、中文文本处理
 ### 方案一，使用指定的字体包
 ```
 \documentclass[12pt]{article}
@@ -74,8 +74,8 @@ pdflatex 文件名#会报错，因为使用系统字体？
 xelatex 文件名#不用加后缀
 pdflatex 文件名#会报错，因为使用系统字体？
 ```
-## 引用文献的说明
-文献tex:
+## 四、引用文献的说明
+文献tex如下（使用第三章方案二）:
 ```
 \documentclass{article}  
 %\usepackage{CJKutf8}  
@@ -122,7 +122,7 @@ publisher ="出版社名称"
 xelatex 文件名# 可以不加tex后缀
 bibtex 文件名#是tex的文件名(不加后缀)，不是name1的文件名。
 xelatex 文件名
-xelatex 文件名#要两遍
+xelatex 文件名#要两遍,没有第二遍的话，有引用文献，但引文标识为？。
 ```
 参考：
 1. https://blog.csdn.net/chen_shiqiang/article/details/52101836
