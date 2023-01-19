@@ -1,0 +1,24 @@
+%\documentclass{ctexart} mac目前不支持
+%\documentclass{xeCJK} 
+%\documentclass[11pt]{article}
+\documentclass{article}  
+%\usepackage{CJKutf8}  
+\usepackage{ctex}  
+\usepackage{cite}
+\begin{document} 
+\title{My Article}
+\author{Nobody Jr.}
+\date{Today}
+\maketitle
+%\begin{CJK}{UTF8}{gkai}  
+中文 
+把Latex中的 Reference 写成\cite{name1}中文的"参考文献" \cite{name2}.
+%Blablabla said Nobody ~\cite{Nobody06}.
+%如果文档类是article之类的, 用\renewcommand\refname{参考文献} 
+%如果文档类是book之类的, 用\renewcommand\bibname{参考文献} 
+%\end{CJK}  
+\renewcommand\refname{参考献} 
+\bibliography{name1}{}
+\bibliographystyle{plain} 
+%\bibliography{ bibtex-example.bib} 
+\end{document} 
