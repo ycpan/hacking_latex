@@ -1,8 +1,14 @@
 # mac使用
 ## 一、软件安装
-1. Tex Live(首选)
-官方网站[](https://www.tug.org/mactex/)
-中文镜像网站[](https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/)
+1. Tex Live（首选）
+官方网站[]（https://www.tug.org/mactex/）
+中文镜像网站[]（https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/）
+mac安装后会有几个工具:   
+1. LaTeXiT，mac上编辑工具用的，使用command+T，可以预览效果。   
+2. BibDesk，管理参考文献的。   
+3. Tex Live Unity管理包的。   
+4. TexShop，编辑器。   
+
 2. MiKTeX（CTeX 套装是 MiKTeX 的重新打包，宏包自动安装的功能也继承于它）
 ## 二、编译工具介绍
 1. 预备知识    
@@ -16,8 +22,8 @@ pdflatex:用来编译laTeX格式写的tex文件。
 pdftex:用来编译用Plain TeX格式写的tex文件。     
 xetex:TeX语言的新的实现，针对plain tex格式。    
 xelatex:TeX语言的新的实现，即把Tex语言转换为排版的一个新程序。支持Unicode 编码和直接访问操作系统字体。针对latex格式。     
-备注:pdfLaTeX是比较原始的版本，对Unicode的支持不是很好，所以显示汉字需要使用CJK宏包。它不支持操作系统的truetype字体(ttf)，只能使用type1字体。优点是支持的宏包比较多，有些老一点的宏包必须用pdfLaTeX来编译。     
-XeLaTeX是新的Unicode版本，内建支持Unicode(UTF-8)，自然也包括汉字在内，而且可以调用操作系统的truetype字体。如果你的文档有汉字，那么推荐用XeLaTeX。缺点是不支持某一些宏包。     
+备注:pdfLaTeX是比较原始的版本，对Unicode的支持不是很好，所以显示汉字需要使用CJK宏包。它不支持操作系统的truetype字体（ttf），只能使用type1字体。优点是支持的宏包比较多，有些老一点的宏包必须用pdfLaTeX来编译。     
+XeLaTeX是新的Unicode版本，内建支持Unicode（UTF-8），自然也包括汉字在内，而且可以调用操作系统的truetype字体。如果你的文档有汉字，那么推荐用XeLaTeX。缺点是不支持某一些宏包。     
 3. 文献引用    
 biblatex 有两种后端可以使用，分别是bibtex和biber。    
 两者的基本信息是一致的，只是biber后端多了一些附加的输出。    
@@ -90,8 +96,8 @@ pdflatex 文件名#会报错，因为使用系统字体？
 中文 
 把Latex中的 Reference 写成\cite{name1}中文的"参考文献" \cite{name2}.
 %Blablabla said Nobody ~\cite{Nobody06}.
-%如果文档类是article之类的, 用\renewcommand\refname{参考文献} 
-%如果文档类是book之类的, 用\renewcommand\bibname{参考文献} 
+%如果文档类是article之类的， 用\renewcommand\refname{参考文献} 
+%如果文档类是book之类的， 用\renewcommand\bibname{参考文献} 
 %\end{CJK}  
 \renewcommand\refname{参考献} 
 \bibliography{name1}{}
@@ -101,28 +107,28 @@ pdflatex 文件名#会报错，因为使用系统字体？
 ```
 编写参考文献，命名为name1.bib
 ```
-@article{name1, 
-author = {autohr作者, 多个作者用 and 连接}, 
-title = {标题title}, 
-journal = {期刊名fdss}, 
-volume = {卷20}, 
-number = {页码}, 
-year = {年份}, 
-abstract = {摘要, 这个主要是引用的时候自己参考的, 这一行不是必须的} 
+@article{name1， 
+author = {autohr作者， 多个作者用 and 连接}， 
+title = {标题title}， 
+journal = {期刊名fdss}， 
+volume = {卷20}， 
+number = {页码}， 
+year = {年份}， 
+abstract = {摘要， 这个主要是引用的时候自己参考的， 这一行不是必须的} 
 } 
-@book{name2, 
-author ="作者autoee", 
-year="年份2008", 
-title="书名", 
+@book{name2， 
+author ="作者autoee"， 
+year="年份2008"， 
+title="书名"， 
 publisher ="出版社名称" 
 } 
 ```
 编译命令
 ```
 xelatex 文件名# 可以不加tex后缀
-bibtex 文件名#是tex的文件名(不加后缀)，不是name1的文件名。
+bibtex 文件名#是tex的文件名（不加后缀），不是name1的文件名。
 xelatex 文件名
-xelatex 文件名#要两遍,没有第二遍的话，有引用文献，但引文标识为？。
+xelatex 文件名#要两遍，没有第二遍的话，有引用文献，但引文标识为？。
 ```
 参考：
 1. https://blog.csdn.net/chen_shiqiang/article/details/52101836
