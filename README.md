@@ -1,8 +1,8 @@
 # mac使用
 ## 一、软件安装
 ### Tex Live（首选）
-\[官方网站\](https://www.tug.org/mactex/)   
-\[中文镜像网站\](https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/)   
+[官方网站](https://www.tug.org/mactex/)   
+[中文镜像网站](https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/)   
 mac安装后会有几个工具:   
 1. LaTeXiT，mac上编辑工具用的，使用command+T，可以预览效果。   
 2. BibDesk，管理参考文献的。   
