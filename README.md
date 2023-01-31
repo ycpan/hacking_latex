@@ -107,19 +107,19 @@ pdflatex 文件名#会报错，因为使用系统字体？
 ```
 编写参考文献，命名为name1.bib
 ```
-@article{name1， 
-author = {autohr作者， 多个作者用 and 连接}， 
-title = {标题title}， 
-journal = {期刊名fdss}， 
-volume = {卷20}， 
-number = {页码}， 
-year = {年份}， 
-abstract = {摘要， 这个主要是引用的时候自己参考的， 这一行不是必须的} 
+@article{name1, 
+author = {autohr作者, 多个作者用 and 连接}, 
+title = {标题title}, 
+journal = {期刊名fdss}, 
+volume = {卷20}, 
+number = {页码}, 
+year = {年份}, 
+abstract = {摘要, 这个主要是引用的时候自己参考的, 这一行不是必须的} 
 } 
-@book{name2， 
-author ="作者autoee"， 
-year="年份2008"， 
-title="书名"， 
+@book{name2, 
+author ="作者autoee", 
+year="年份2008", 
+title="书名", 
 publisher ="出版社名称" 
 } 
 ```
