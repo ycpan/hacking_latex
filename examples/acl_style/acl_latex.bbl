@@ -1,0 +1,312 @@
+\begin{thebibliography}{39}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Appalaraju et~al.(2021)Appalaraju, Jasani, Kota, Xie, and
+  Manmatha}]{appalaraju2021docformer}
+Srikar Appalaraju, Bhavan Jasani, Bhargava~Urala Kota, Yusheng Xie, and
+  R~Manmatha. 2021.
+\newblock Docformer: End-to-end transformer for document understanding.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV)}, pages 993--1003.
+
+\bibitem[{Bao et~al.(2020)Bao, Dong, Wei, Wang, Yang, Liu, Wang, Gao, Piao,
+  Zhou et~al.}]{bao2020unilmv2}
+Hangbo Bao, Li~Dong, Furu Wei, Wenhui Wang, Nan Yang, Xiaodong Liu, Yu~Wang,
+  Jianfeng Gao, Songhao Piao, Ming Zhou, et~al. 2020.
+\newblock Unilmv2: Pseudo-masked language models for unified language model
+  pre-training.
+\newblock In \emph{Proceedings of the 37th International Conference on Machine
+  Learning (ICML)}, pages 642--652.
+
+\bibitem[{Biten et~al.(2019)Biten, Tito, Mafla, Gomez, Rusinol, Mathew,
+  Jawahar, Valveny, and Karatzas}]{biten2019icdar}
+Ali~Furkan Biten, Ruben Tito, Andres Mafla, Lluis Gomez, Mar{\c{c}}al Rusinol,
+  Minesh Mathew, CV~Jawahar, Ernest Valveny, and Dimosthenis Karatzas. 2019.
+\newblock Icdar 2019 competition on scene text visual question answering.
+\newblock In \emph{Proceedings of the 2019 International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 1563--1570.
+
+\bibitem[{Cheng et~al.(2020)Cheng, Qiu, Shi, Huang, and Lin}]{cheng2020one}
+Mengli Cheng, Minghui Qiu, Xing Shi, Jun Huang, and Wei Lin. 2020.
+\newblock One-shot text field labeling using attention and belief propagation
+  for structure information extraction.
+\newblock In \emph{Proceedings of the 28th ACM International Conference on
+  Multimedia (MM)}, pages 340--348.
+
+\bibitem[{Cui et~al.(2021)Cui, Che, Liu, Qin, and Yang}]{cui2021pre}
+Yiming Cui, Wanxiang Che, Ting Liu, Bing Qin, and Ziqing Yang. 2021.
+\newblock Pre-training with whole word masking for chinese bert.
+\newblock \emph{IEEE/ACM Transactions on Audio, Speech, and Language Processing
+  (TASLP)}, 29:3504--3514.
+
+\bibitem[{Devlin et~al.(2019)Devlin, Chang, Lee, and
+  Toutanova}]{devlin2019bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock In \emph{Proceedings of the 2019 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies (NAACL)}, pages 4171--4186.
+
+\bibitem[{Grali{\'n}ski et~al.(2021)Grali{\'n}ski, Stanis{\l}awek,
+  Wr{\'o}blewska, Lipi{\'n}ski, Kaliska, Rosalska, Topolski, and
+  Biecek}]{gralinski2021kleister}
+Filip Grali{\'n}ski, Tomasz Stanis{\l}awek, Anna Wr{\'o}blewska, Dawid
+  Lipi{\'n}ski, Agnieszka Kaliska, Paulina Rosalska, Bartosz Topolski, and
+  Przemys{\l}aw Biecek. 2021.
+\newblock Kleister: A novel task for information extraction involving long
+  documents with complex layout.
+\newblock In \emph{Proceedings of the 2021 International Conference on Document
+  Analysis and Recognition (ICDAR)}.
+
+\bibitem[{Gu et~al.(2022)Gu, Meng, Wang, Lan, Wang, Gu, and
+  Zhang}]{gu2022xylayoutlm}
+Zhangxuan Gu, Changhua Meng, Ke~Wang, Jun Lan, Weiqiang Wang, Ming Gu, and
+  Liqing Zhang. 2022.
+\newblock Xylayoutlm: Towards layout-aware multimodal networks for
+  visually-rich document understanding.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 4583--4592.
+
+\bibitem[{Harley et~al.(2015)Harley, Ufkes, and
+  Derpanis}]{harley2015evaluation}
+Adam~W Harley, Alex Ufkes, and Konstantinos~G Derpanis. 2015.
+\newblock Evaluation of deep convolutional nets for document image
+  classification and retrieval.
+\newblock In \emph{Proceedings of the 13th International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 991--995.
+
+\bibitem[{He et~al.(2020)He, Zhou, Xiao, Jiang, Liu, Yuan, and Xu}]{he2020bert}
+Bin He, Di~Zhou, Jinghui Xiao, Xin Jiang, Qun Liu, Nicholas~Jing Yuan, and Tong
+  Xu. 2020.
+\newblock Bert-mk: Integrating graph contextualized knowledge into pre-trained
+  language models.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  EMNLP 2020}, pages 2281--2290.
+
+\bibitem[{He et~al.(2021)He, Liu, Gao, and Chen}]{he2021deberta}
+Pengcheng He, Xiaodong Liu, Jianfeng Gao, and Weizhu Chen. 2021.
+\newblock Deberta: Decoding-enhanced bert with disentangled attention.
+\newblock In \emph{Proceedings of the 2021 International Conference on Learning
+  Representations (ICLR)}, pages 1--21.
+
+\bibitem[{Huang et~al.(2019)Huang, Chen, He, Bai, Karatzas, Lu, and
+  Jawahar}]{huang2019icdar2019}
+Zheng Huang, Kai Chen, Jianhua He, Xiang Bai, Dimosthenis Karatzas, Shijian Lu,
+  and CV~Jawahar. 2019.
+\newblock Icdar2019 competition on scanned receipt ocr and information
+  extraction.
+\newblock In \emph{Proceedings of the 2019 International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 1516--1520.
+
+\bibitem[{Jain and Wigington(2019)}]{jain2019multimodal}
+Rajiv Jain and Curtis Wigington. 2019.
+\newblock Multimodal document image classification.
+\newblock In \emph{Proceedings of the 2019 International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 71--77.
+
+\bibitem[{Joshi et~al.(2020)Joshi, Chen, Liu, Weld, Zettlemoyer, and
+  Levy}]{joshi2020spanbert}
+Mandar Joshi, Danqi Chen, Yinhan Liu, Daniel~S Weld, Luke Zettlemoyer, and Omer
+  Levy. 2020.
+\newblock Spanbert: Improving pre-training by representing and predicting
+  spans.
+\newblock \emph{Transactions of the Association for Computational Linguistics
+  (TACL)}, 8:64--77.
+
+\bibitem[{Katti et~al.(2018)Katti, Reisswig, Guder, Brarda, Bickel, H{\"o}hne,
+  and Faddoul}]{katti2018chargrid}
+Anoop~R Katti, Christian Reisswig, Cordula Guder, Sebastian Brarda, Steffen
+  Bickel, Johannes H{\"o}hne, and Jean~Baptiste Faddoul. 2018.
+\newblock Chargrid: Towards understanding 2d documents.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 4459--4469.
+
+\bibitem[{Kingma and Ba(2014)}]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba. 2014.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}.
+
+\bibitem[{Lewis et~al.(2006)Lewis, Agam, Argamon, Frieder, Grossman, and
+  Heard}]{lewis2006building}
+David Lewis, Gady Agam, Shlomo Argamon, Ophir Frieder, David Grossman, and
+  Jefferson Heard. 2006.
+\newblock Building a test collection for complex document information
+  processing.
+\newblock In \emph{Proceedings of the 29th annual international ACM SIGIR
+  conference on Research and development in information retrieval (SIGIR)},
+  pages 665--666.
+
+\bibitem[{Li et~al.(2021{\natexlab{a}})Li, Bi, Yan, Wang, Huang, Huang, and
+  Si}]{li2021structurallm}
+Chenliang Li, Bin Bi, Ming Yan, Wei Wang, Songfang Huang, Fei Huang, and Luo
+  Si. 2021{\natexlab{a}}.
+\newblock Structurallm: Structural pre-training for form understanding.
+\newblock In \emph{Proceedings of the 59th Annual Meeting of the Association
+  for Computational Linguistics (ACL)}, pages 6309--6318.
+
+\bibitem[{Li et~al.(2021{\natexlab{b}})Li, Qian, Yu, Qin, Zhang, Liu, Yao, Han,
+  Liu, and Ding}]{li2021structext}
+Yulin Li, Yuxi Qian, Yuechen Yu, Xiameng Qin, Chengquan Zhang, Yan Liu, Kun
+  Yao, Junyu Han, Jingtuo Liu, and Errui Ding. 2021{\natexlab{b}}.
+\newblock Structext: Structured text understanding with multi-modal
+  transformers.
+\newblock In \emph{Proceedings of the 29th ACM International Conference on
+  Multimedia (MM)}, pages 1912--1920.
+
+\bibitem[{Liu et~al.(2020)Liu, Zhou, Zhao, Wang, Ju, Deng, and
+  Wang}]{liu2020kbert}
+Weijie Liu, Peng Zhou, Zhe Zhao, Zhiruo Wang, Qi~Ju, Haotang Deng, and Ping
+  Wang. 2020.
+\newblock K-bert: Enabling language representation with knowledge graph.
+\newblock In \emph{Proceedings of the 34th AAAI Conference on Artificial
+  Intelligence (AAAI)}, pages 2901--2908.
+
+\bibitem[{Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
+  Zettlemoyer, and Stoyanov}]{liu2019roberta}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
+  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019.
+\newblock Roberta: A robustly optimized bert pretraining approach.
+\newblock \emph{arXiv preprint arXiv:1907.11692}.
+
+\bibitem[{Lu et~al.(2019)Lu, Batra, Parikh, and Lee}]{lu2019vilbert}
+Jiasen Lu, Dhruv Batra, Devi Parikh, and Stefan Lee. 2019.
+\newblock Vilbert: Pretraining task-agnostic visiolinguistic representations
+  for vision-and-language tasks.
+\newblock In \emph{Processing of the 33rd Conference on Neural Information
+  Processing Systems (NeurIPS)}, pages 1--11.
+
+\bibitem[{Mathew et~al.(2021)Mathew, Karatzas, and Jawahar}]{mathew2021docvqa}
+Minesh Mathew, Dimosthenis Karatzas, and CV~Jawahar. 2021.
+\newblock Docvqa: A dataset for vqa on document images.
+\newblock In \emph{Proceedings of the IEEE/CVF Winter Conference on
+  Applications of Computer Vision (WACV)}, pages 2200--2209.
+
+\bibitem[{Park et~al.(2019)Park, Shin, Lee, Lee, Surh, Seo, and
+  Lee}]{park2019cord}
+Seunghyun Park, Seung Shin, Bado Lee, Junyeop Lee, Jaeheung Surh, Minjoon Seo,
+  and Hwalsuk Lee. 2019.
+\newblock Cord: A consolidated receipt dataset for post-ocr parsing.
+\newblock In \emph{Workshop on Document Intelligence at NeurIPS 2019}.
+
+\bibitem[{Powalski et~al.(2021)Powalski, Borchmann, Jurkiewicz, Dwojak,
+  Pietruszka, and Pa{\l}ka}]{powalski2021going}
+Rafa{\l} Powalski, {\L}ukasz Borchmann, Dawid Jurkiewicz, Tomasz Dwojak,
+  Micha{\l} Pietruszka, and Gabriela Pa{\l}ka. 2021.
+\newblock Going full-tilt boogie on document understanding with
+  text-image-layout transformer.
+\newblock In \emph{Proceedings of the 2021 International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 732--747.
+
+\bibitem[{Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, Sutskever
+  et~al.}]{radford2019language}
+Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya
+  Sutskever, et~al. 2019.
+\newblock Language models are unsupervised multitask learners.
+\newblock \emph{OpenAI Blog}, pages 1--9.
+
+\bibitem[{Ren et~al.(2015)Ren, He, Girshick, and Sun}]{ren2015faster}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun. 2015.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock In \emph{Processing of the 29th Conference on Neural Information
+  Processing Systems (NeurIPS)}, pages 1--9.
+
+\bibitem[{Sarkhel and Nandi(2019)}]{sarkhel2019deterministic}
+Ritesh Sarkhel and Arnab Nandi. 2019.
+\newblock Deterministic routing between layout abstractions for multi-scale
+  classification of visually rich documents.
+\newblock In \emph{Proceedings of the 28th International Joint Conference on
+  Artificial Intelligence (IJCAI)}.
+
+\bibitem[{Sun et~al.(2019)Sun, Wang, Li, Feng, Chen, Zhang, Tian, Zhu, Tian,
+  and Wu}]{sun2019ernie}
+Yu~Sun, Shuohuan Wang, Yukun Li, Shikun Feng, Xuyi Chen, Han Zhang, Xin Tian,
+  Danxiang Zhu, Hao Tian, and Hua Wu. 2019.
+\newblock Ernie: Enhanced representation through knowledge integration.
+\newblock \emph{arXiv preprint arXiv:1904.09223}.
+
+\bibitem[{Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones,
+  Gomez, Kaiser, and Polosukhin}]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin. 2017.
+\newblock Attention is all you need.
+\newblock In \emph{Processing of the 31st Conference on Neural Information
+  Processing Systems (NeurIPS)}, pages 5998--6008.
+
+\bibitem[{Wang et~al.(2021{\natexlab{a}})Wang, Tang, Duan, Wei, Huang, Ji, Cao,
+  Jiang, and Zhou}]{wang2021kadapter}
+Ruize Wang, Duyu Tang, Nan Duan, Zhongyu Wei, Xuan-Jing Huang, Jianshu Ji,
+  Guihong Cao, Daxin Jiang, and Ming Zhou. 2021{\natexlab{a}}.
+\newblock K-adapter: Infusing knowledge into pre-trained models with adapters.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL-IJCNLP 2021}, pages 1405--1418.
+
+\bibitem[{Wang et~al.(2021{\natexlab{b}})Wang, Gao, Zhu, Zhang, Liu, Li, and
+  Tang}]{wang2021kepler}
+Xiaozhi Wang, Tianyu Gao, Zhaocheng Zhu, Zhengyan Zhang, Zhiyuan Liu, Juanzi
+  Li, and Jian Tang. 2021{\natexlab{b}}.
+\newblock Kepler: A unified model for knowledge embedding and pre-trained
+  language representation.
+\newblock \emph{Transactions of the Association for Computational Linguistics
+  (TACL)}, 9:176--194.
+
+\bibitem[{Wang et~al.(2021{\natexlab{c}})Wang, Xu, Cui, Shang, and
+  Wei}]{wang2021layoutreader}
+Zilong Wang, Yiheng Xu, Lei Cui, Jingbo Shang, and Furu Wei.
+  2021{\natexlab{c}}.
+\newblock Layoutreader: Pre-training of text and layout for reading order
+  detection.
+\newblock In \emph{Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 4735--4744.
+
+\bibitem[{Xu et~al.(2021)Xu, Xu, Lv, Cui, Wei, Wang, Lu, Florencio, Zhang, Che
+  et~al.}]{xu2021layoutlmv2}
+Yang Xu, Yiheng Xu, Tengchao Lv, Lei Cui, Furu Wei, Guoxin Wang, Yijuan Lu,
+  Dinei Florencio, Cha Zhang, Wanxiang Che, et~al. 2021.
+\newblock Layoutlmv2: Multi-modal pre-training for visually-rich document
+  understanding.
+\newblock In \emph{Proceedings of the 59th Annual Meeting of the Association
+  for Computational Linguistics (ACL)}, pages 2579--2591.
+
+\bibitem[{Xu et~al.(2020)Xu, Li, Cui, Huang, Wei, and Zhou}]{xu2020layoutlm}
+Yiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, and Ming Zhou. 2020.
+\newblock Layoutlm: Pre-training of text and layout for document image
+  understanding.
+\newblock In \emph{Proceedings of the 26th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining (KDD)}, pages 1192--1200.
+
+\bibitem[{Yang et~al.(2017)Yang, Yumer, Asente, Kraley, Kifer, and
+  Lee~Giles}]{yang2017learning}
+Xiao Yang, Ersin Yumer, Paul Asente, Mike Kraley, Daniel Kifer, and
+  C~Lee~Giles. 2017.
+\newblock Learning to extract semantic structure from documents using
+  multimodal fully convolutional neural networks.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 5315--5324.
+
+\bibitem[{Yang et~al.(2016)Yang, Yang, Dyer, He, Smola, and
+  Hovy}]{yang2016hierarchical}
+Zichao Yang, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola, and Eduard Hovy.
+  2016.
+\newblock Hierarchical attention networks for document classification.
+\newblock In \emph{Proceedings of the 2016 conference of the North American
+  chapter of the association for computational linguistics (NAACL)}, pages
+  1480--1489.
+
+\bibitem[{Yu et~al.(2021)Yu, Tang, Yin, Sun, Tian, Wu, and Wang}]{yu2021ernie}
+Fei Yu, Jiji Tang, Weichong Yin, Yu~Sun, Hao Tian, Hua Wu, and Haifeng Wang.
+  2021.
+\newblock Ernie-vil: Knowledge enhanced vision-language representations through
+  scene graphs.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence (AAAI)}, pages 3208--3216.
+
+\bibitem[{Zhang et~al.(2019)Zhang, Han, Liu, Jiang, Sun, and
+  Liu}]{zhang2019ernie}
+Zhengyan Zhang, Xu~Han, Zhiyuan Liu, Xin Jiang, Maosong Sun, and Qun Liu. 2019.
+\newblock Ernie: Enhanced language representation with informative entities.
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics (ACL)}, pages 1441--1451.
+
+\end{thebibliography}
