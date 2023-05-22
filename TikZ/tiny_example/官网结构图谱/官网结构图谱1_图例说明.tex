@@ -1,0 +1,29 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{ctex}  
+\usepackage{tikz}
+%\usetikzlibrary {arrows.meta,petri,positioning}
+\usetikzlibrary {arrows.meta,backgrounds,petri,fit,positioning}
+\usetikzlibrary{patterns.meta}%不加meta,dots用小写，不能加参数
+\usepgflibrary{patterns.meta}
+\begin{document}
+\begin{tikzpicture}[
+  node distance=4cm,
+  %industryplace/.style={circle,draw=blue!20,fill=blue!20,thick, inner sep=0mm,minimum size=10mm},
+  every text node part/.style={font=\itshape,text width=2cm,align=center},
+  every lower node part/.style={font=\footnotesize},
+  %industryplace/.style={circle,draw=black!60,fill=blue!20,thick, inner sep=0mm,minimum size=10mm},
+  industryplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Dots[angle=45,distance={15pt/sqrt(2)}]}},
+  %produceplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Hatch[angle=45,distance={15pt/sqrt(2)}]}},
+  produceplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Lines[angle=90,distance={15pt/sqrt(2)},line width/.initial=.2pt]}},
+  techplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Lines[angle=0,distance={15pt/sqrt(2)},line width/.initial=.2pt]}},
+  transition/.style={rectangle,draw=black!50,fill=black!20,thick, inner sep=0pt,minimum size=4mm}]
+  %\draw[help lines] (0,0) grid (6,4);
+%\draw[help lines] (0,0) grid (3,2);
+\node[industryplace] (风能发电其它相关装备及材料制造) {};
+表示产业节点\\
+\node[produceplace] (电焊机) [below of=风能发电其它相关装备及材料制造] {};
+表示产品节点\\
+\node[techplace] (有源整流) [below of=电焊机] {};
+表示技术节点\\
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,21 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+
+\begin{document}
+\begin{tikzpicture}
+[every place/.style= {minimum size=6mm,thick,draw=blue!75,fill=blue!20},
+every transition/.style={thick,draw=black!75,fill=black!20},
+red place/.style= {place,draw=red!75,fill=red!20},
+every label/.style= {red}]
+\usetikzlibrary {positioning}
+\node[place] (waiting) {};
+\node[place] (critical) [below=of waiting] {};
+\node[place] (semaphore) [below=of critical] {};
+\node[transition] (leave critical) [right=of critical] {};
+\node[transition] (enter critical) [left=of critical] {};
+\draw [->] (enter critical) to (critical);
+\draw [->] (waiting) to [out=180,in=90] (enter critical);
+\end{tikzpicture}
+\end{document}

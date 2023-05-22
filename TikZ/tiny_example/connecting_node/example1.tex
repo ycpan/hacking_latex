@@ -1,0 +1,23 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{tikz}
+\begin{document}
+  \usetikzlibrary {arrows.meta,positioning}
+% Styles place and transition as before
+\begin{tikzpicture} [place/.style={circle,draw=blue!50,fill=blue!20,thick, inner sep=0pt,minimum size=6mm},
+  transition/.style={rectangle,draw=black!50,fill=black!20,thick, inner sep=0pt,minimum size=4mm},
+  bend angle=45,
+pre/.style={<-,shorten <=1pt,>={Stealth[round]},semithick}, 
+post/.style={->,shorten >=1pt,>={Stealth[round]},semithick}]
+\node[place]  (waiting) {};
+\node[place]   (critical) [below=of waiting] {};
+\node[place]
+ (critical) [below=of waiting] {}; (semaphore) [below=of critical] {};
+\node[transition]
+  edge [pre]
+  edge [post,bend right] (waiting)
+  edge [pre, bend left]  (semaphore);
+   \node[transition] (enter critical) [left=of critical] {} edge [post] (critical)
+edge [pre, bend left] (waiting)
+edge [post,bend right] (semaphore);
+\end{tikzpicture}
+\end{document}

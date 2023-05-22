@@ -1,0 +1,91 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{ctex}  
+\usepackage{tikz}
+%\usetikzlibrary {arrows.meta,petri,positioning}
+\usetikzlibrary {arrows.meta,backgrounds,petri,fit,positioning}
+\usetikzlibrary{patterns.meta}%不加meta,dots用小写，不能加参数
+\usepgflibrary{patterns.meta}
+\begin{document}
+\begin{tikzpicture}[
+  node distance=4cm,
+  %industryplace/.style={circle,draw=blue!20,fill=blue!20,thick, inner sep=0mm,minimum size=10mm},
+  every text node part/.style={font=\itshape,text width=2cm,align=center},
+  every lower node part/.style={font=\footnotesize},
+  %industryplace/.style={circle,draw=black!60,fill=blue!20,thick, inner sep=0mm,minimum size=10mm},
+  industryplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Dots[angle=45,distance={15pt/sqrt(2)}]}},
+  %produceplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Hatch[angle=45,distance={15pt/sqrt(2)}]}},
+  produceplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Lines[angle=90,distance={15pt/sqrt(2)},line width/.initial=.2pt]}},
+  techplace/.style={circle,draw=black!60,thick, inner sep=0mm,minimum size=10mm, pattern={Lines[angle=0,distance={15pt/sqrt(2)},line width/.initial=.2pt]}},
+  transition/.style={rectangle,draw=black!50,fill=black!20,thick, inner sep=0pt,minimum size=4mm}]
+  %\draw[help lines] (0,0) grid (6,4);
+%\draw[help lines] (0,0) grid (3,2);
+\node[industryplace] (风能发电其它相关装备及材料制造) {风能发电其它相关装备及材料制造};
+\node[industryplace] (水及海水资源利用设备制造) [below of=风能发电其它相关装备及材料制造] {水及海水资源利用设备制造};
+\node[industryplace] (海洋工程装备产业) [below of=水及海水资源利用设备制造] {海洋工程装备产业};
+
+\node[industryplace] (海洋工程装备制造) [right of=水及海水资源利用设备制造] {海洋工程装备制造}
+%edge [pre,bend right] node[auto,swap] {部分包含} (风能发电其它相关装备及材料制造) 
+%edge [pre,bend right] node[auto,swap] {部分包含} (水及海水资源利用设备制造) 
+%edge [pre,bend left] node[auto,swap] {包含} (海洋工程装备产业) ;
+edge [pre] node[midway,sloped,above] {部分包含} (风能发电其它相关装备及材料制造) 
+edge [pre] node[midway,sloped,above] {部分包含} (水及海水资源利用设备制造) 
+edge [pre] node[midway,sloped,above] {包含} (海洋工程装备产业); 
+\node[industryplace] (深海石油专探设备制造) [below of=海洋工程装备制造] {深海石油专探设备制造}
+edge [pre] node[midway,sloped,above] {包含} (海洋工程装备产业) ;
+\node[industryplace] (海洋环境检测与探测设备制造) [below of=深海石油专探设备制造] {海洋环境检测与探测设备制造}
+edge [pre] node[midway,sloped,above] {包含} (海洋工程装备产业) ;
+
+\node[industryplace] (金属切割及焊接设备制造) [right of=海洋工程装备制造] {金属切割及焊接设备制造}
+edge [pre] node[midway,sloped,above] {部分包含} (海洋工程装备制造) ;
+\node[industryplace] (石油浮动工程结构物) [below of=金属切割及焊接设备制造] {石油浮动工程结构物}
+edge [pre] node[midway,sloped,above] {包含} (海洋工程装备制造) ;
+\node[produceplace] (电焊机) [right of=金属切割及焊接设备制造] {电焊机}
+edge [pre] node[midway,sloped,above] {包含} (金属切割及焊接设备制造) ;
+\node[produceplace] (气体焊接机架) [below of=电焊机] {气体焊接机架}
+edge [pre] node[midway,sloped,above] {包含} (金属切割及焊接设备制造) ;
+\node[produceplace] (钎焊机械) [below of=气体焊接机架] {钎焊机械}
+edge [pre] node[midway,sloped,above] {包含} (金属切割及焊接设备制造) ;
+\node[produceplace] (焊接设备用零件) [above of=电焊机] {焊接设备用零件}
+edge [pre] node[midway,sloped,above] {包含} (金属切割及焊接设备制造) ;
+\node[produceplace] (机架) [right of=电焊机] {机架}
+edge [pre] node[midway,sloped,above] {结构包含} (电焊机) ;
+\node[produceplace] (整流器) [above of=机架] {整流器}
+edge [pre] node[midway,sloped,above] {结构包含} (电焊机) ;
+\node[produceplace] (变压器) [above of=整流器] {变压器}
+edge [pre] node[midway,sloped,above] {结构包含} (电焊机) ;
+%\node[produceplace] (工作台) [above of=变压器] {工作台}
+%edge [pre] node[midway,sloped,above] {结构包含} (电焊机) ;
+\node[produceplace] (等离子弧焊接机) [below of=机架] {等离子弧焊接机}
+edge [pre] node[midway,sloped,above] {种类包含} (电焊机) ;
+\node[produceplace] (电阻焊接机) [below of=等离子弧焊接机] {电阻焊接机}
+edge [pre] node[midway,sloped,above] {种类包含} (电焊机) ;
+\node[produceplace] (电子束焊接机) [below of=电阻焊接机] {电子束焊接机}
+edge [pre] node[midway,sloped,above] {种类包含} (电焊机) ;
+%\node[produceplace] (激光焊接机) [below of=电子束焊接机] {激光焊接机}
+%edge [pre] node[midway,sloped,above] {种类包含} (电焊机) ;
+\node[techplace] (同步整流) [right of=整流器] {同步整流}
+edge [pre] node[midway,sloped,above] {相关技术} (整流器) ;
+\node[techplace] (有源整流) [above of=同步整流] {有源整流}
+edge [pre] node[midway,sloped,above] {相关技术} (整流器) ;
+\node[techplace] (机电式整流) [below of=同步整流] {机电式整流}
+edge [pre] node[midway,sloped,above] {相关技术} (整流器) ;
+\node[techplace] (电解式整流) [below of=机电式整流] {电解式整流}
+edge [pre] node[midway,sloped,above] {相关技术} (整流器) ;
+\node[techplace] (等离子整流) [below of=电解式整流] {等离子整流}
+edge [pre] node[midway,sloped,above] {相关技术} (整流器) ;
+\node[techplace] (谐振子整流) [below of=等离子整流] {谐振子整流}
+edge [pre] node[midway,sloped,above] {相关技术} (整流器) ;
+%\node[techplace] (变流技术) [right of=机电式整流] {变流技术}
+\node[techplace] (整流技术) [right of=机电式整流] {整流技术}
+edge [post] node[midway,sloped,above] {技术包含} (同步整流) 
+edge [post] node[midway,sloped,above] {技术包含} (有源整流) 
+edge [post] node[midway,sloped,above] {技术包含} (机电式整流) 
+edge [post] node[midway,sloped,above] {技术包含} (电解式整流) 
+edge [post] node[midway,sloped,above] {技术包含} (等离子整流) 
+edge [post] node[midway,sloped,above] {技术包含} (谐振子整流); 
+\node[techplace] (逆变技术) [below of=整流技术] {逆变技术};
+\node[techplace] (变流技术) [right of=整流技术] {变流技术}
+edge [post] node[midway,sloped,above] {技术包含} (整流技术) 
+edge [post] node[midway,sloped,above] {技术包含} (逆变技术) ;
+\end{tikzpicture}
+\end{document}

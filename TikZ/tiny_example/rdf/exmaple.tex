@@ -1,0 +1,27 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+
+\begin{document}
+\tikz {
+\node (safe) { Safe }
+child { node (coins) {Coins} }
+child { node (gold) {Gold} };
+\scoped [rdf engine = {
+statement = {
+subject = (safe),
+has type = rdf:Seq
+},
+statement = {
+subject = (safe),
+predicate = rdf:\_1,
+object = (coins)
+},
+statement = {
+subject = (safe),
+predicate = rdf:\_2,
+object = (gold)
+} }];
+}
+\end{document}

@@ -1,0 +1,16 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+
+\begin{document}
+\usetikzlibrary {petri}
+\begin{tikzpicture}
+\node[place,label=above:$p_2$] {}
+[children are tokens]
+child {node [token] {1}}
+child {node [token,fill=red] {2}}
+child {node [token,fill=red] {2}}
+child {node [token] {1}};
+\end{tikzpicture}
+\end{document}

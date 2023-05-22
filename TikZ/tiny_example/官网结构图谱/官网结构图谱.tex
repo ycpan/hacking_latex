@@ -1,0 +1,34 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{ctex}  
+\usepackage{tikz}
+%\usetikzlibrary{positioning}
+\usetikzlibrary {arrows.meta,petri,positioning}
+\begin{document}
+
+%\title{官网信息抽取示意图}
+%\author{潘永灿}
+%\date{Today}
+%\maketitle
+
+\begin{tikzpicture} [
+  node distance=5.3cm,on grid, %用相对位置有效，用绝对位置（坐标）无效。
+  place/.style={circle,draw=blue!20,fill=blue!20,thick, inner sep=0mm,minimum size=10mm},
+  transition/.style={rectangle,draw=black!50,fill=black!20,thick, inner sep=0pt,minimum size=4mm}] 
+  \node at ( 0,2) [place] {};
+  %\node at ( -6,0) [place] {2} edge [->]  (-4,-1);
+  \node at ( -6,0) [place] {2} 
+   edge [pre,->]  (-4,-1) %用pre的这种方式需要 \usetikzlibrary {arrows.meta,petri,positioning} 否则报错
+   edge [pre,->] (-4,0) 
+   edge [post,->] (-4,1);
+  \node at ( -4,-1) [place] {1};
+  \node at ( -4,0) [place] {2};
+  \node at ( -4,1) [place] {你好};
+  \node at ( -2,-2) [place] [label=above:产业]{0};
+  \node at ( -2,-1) [place] {1};
+  \node at ( -2,0) [place] {2};
+  \node at ( -2,1) [place] {你好};
+  \node at ( -2,2) [place] {你好};
+  %\draw [->] (-3,0)  edge -- (2,1);
+  %\path[->] (-3,0) edge  [above right]  {mid} (2,1);
+\end{tikzpicture}
+\end{document}

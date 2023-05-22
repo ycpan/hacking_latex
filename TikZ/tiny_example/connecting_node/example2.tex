@@ -1,0 +1,13 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{tikz}
+\begin{document}
+  \usetikzlibrary {arrows.meta,positioning}
+  \begin{tikzpicture} [place/.style={circle,draw=blue!50,fill=blue!20,thick,
+inner sep=0pt,minimum size=6mm}, transition/.style={rectangle,draw=black!50,fill=black!20,thick,
+inner sep=0pt,minimum size=4mm}] \node at ( 0,2) [place] {};
+  \node at ( 0,1) [place] {};
+  \node at ( 0,0) [place] {};
+  \node at ( 1,1) [transition] {};
+  \node at (-1,1) [transition] {};
+\end{tikzpicture}
+\end{document}
