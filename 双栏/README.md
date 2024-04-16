@@ -27,4 +27,4 @@
 [表格的排版](https://www.littlewaterdrop.com/cs/latex/tables)
 
 【参考文献】
-[^1](https://zhuanlan.zhihu.com/p/392284625)
+[^1]:(https://zhuanlan.zhihu.com/p/392284625)
