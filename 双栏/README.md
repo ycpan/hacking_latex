@@ -2,7 +2,7 @@
 1. 双栏可以分为全局双栏或者部分双栏，全局双栏比较容易，直接引用\documentclass[UTF8,twocolumn]{ctexart}即可
 2. 部分双栏比较麻烦，有两种方案
 2.1 如果不插入图片，表格之类的，可以使用\begin{multicols}{2}即可。
-2.2 如果使用图片，表格，用2.1的方法，表格和图片显示不出来。可以用全局双栏中，部分为单栏的思路。如下：
+2.2 如果使用图片，表格，用2.1的方法，表格和图片显示不出来。可以用全局双栏中，部分为单栏的思路[^1]。如下：
 ```
 \begin{document}
 \title{烟台新能源产业报告}
@@ -22,5 +22,8 @@
 该方法详见report.tex
 ## 关于双栏中排版问题
 [图片的排版](https://www.littlewaterdrop.com/cs/latex/figures)
+
 [表格的排版](https://www.littlewaterdrop.com/cs/latex/tables)
 
+【参考文献】
+[^1]https://zhuanlan.zhihu.com/p/392284625
