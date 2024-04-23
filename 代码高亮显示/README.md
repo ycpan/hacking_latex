@@ -1,11 +1,13 @@
 在LaTeX中插入代码，通常使用` listings`宏包，它允许您在文档中包含高亮显示的源代码。以下是如何在LaTeX文档中插入代码的基本步骤：
 1. **在导言区导入listings宏包**：
 ```latex
+\usepackage{xcolor}%下文有颜色定义，需要引入这个包
 \usepackage{listings}
 ```
 2. **设置listings宏包的参数**（可选）：
 您可以在导言区设置listings宏包的全局参数，例如代码的字体、颜色、行号等。例如：
 ```latex
+
 \lstset{
   language=C, % 设置语言
   basicstyle=\footnotesize\ttfamily, % 设置字体大小和样式
