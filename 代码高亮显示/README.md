@@ -27,7 +27,7 @@
   breakatwhitespace=false, % 只在空格处折行
   title=\lstname, % 显示文件名作为标题
   escapeinside={\%*}{*)} % 允许使用%*...*)进行LaTeX命令的转义
-}
+
 ```
 3. **在文档中插入代码**：
 使用`\lstinputlisting`命令来插入外部代码文件，或者使用`lstlisting`环境来直接在LaTeX文档中嵌入代码。
@@ -45,3 +45,28 @@ def hello_world():
 请根据您的代码语言和需求调整`language`参数。如果您需要更多关于`listings`宏包的详细信息，可以查看其官方文档。
 确保在编译包含`listings`宏包的LaTeX文档时，使用支持该宏包的编译器，如`pdflatex`。
 
+4. **插入python代码块**
+
+lstinputlisting是黑白显示的，不是彩色显示的，如下，python彩色显示：
+```latex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{pythonhighlight}
+
+\begin{document}
+\subsection{1}
+%这是第一种方法，在python环境中书写代码。
+\begin{python}
+def f(x):
+    return x
+\end{python}
+
+\subsection{2}
+%这是第二种方法，在文中书写代码 \pyth{print("Hello CSDN!")}
+
+\subsection{3}
+%这是第三种方法，从外部文件插入代码，从第1行显示到第20行。
+\inputpython{main.py}{1}{20}
+
+\end{document}
+```
