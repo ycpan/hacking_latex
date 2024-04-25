@@ -1,0 +1,19 @@
+\RequirePackage{filecontents}
+\begin{filecontents}{mybib.bib}
+@misc{OMS,
+    author= {{World Health Organisation}},
+    year  = {2017},
+    title = {Vision impairment and blindness, {Fact Sheet N\textsuperscript{o}282}},
+    note  = {\url{http://www.who.int/mediacentre/factsheets/fs282/fr/}, 
+             Last accessed on 2017-11-30},
+}
+\end{filecontents}
+
+\documentclass{article}
+\bibliographystyle{plain}
+\usepackage[hyphens,spaces]{url}
+
+\begin{document}
+\cite{OMS}
+\bibliography{mybib}
+\end{document}

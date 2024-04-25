@@ -1,0 +1,18 @@
+\documentclass{article}  
+\usepackage{ctex}  
+\usepackage[numbers,sort&compress]{natbib} %参考文献右上角显示,那就不需要用cite了
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}% 然后引用的时候使用 \upcite{}的格式（一般的正常引用格式为\cite{}）
+\usepackage[hyphens,spaces]{url}
+\bibliographystyle{plainnat}%这个不支持作者年份引用，下面的支持
+\begin{document} 
+\title{My Article}
+\author{Nobody Jr.}
+\date{Today}
+\maketitle
+中文 
+把Latex中的 Reference 写成\upcite{name1}中文的"参考文献" \upcite{name2}.
+
+这个是网站的引用测试\upcite{website_example1}
+\renewcommand\refname{参考献} 
+\bibliography{name1}{}
+\end{document} 
