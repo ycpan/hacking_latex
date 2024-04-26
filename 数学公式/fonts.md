@@ -19,6 +19,50 @@ $$\boldsymbol{E} \in \mathbb{R}^{n \times d_\text{model}}$$
 \end{document}
 
 ```
+## 复数,矩阵和向量的表示
+在LaTeX中，复数、矩阵和向量的表示通常使用不同的字体来区分它们。以下是一些常见的表示方法：
+1. **复数**：复数通常使用标准的数学字体表示，例如：
+   ```latex
+   $a + bi$
+   ```
+   这里的 `a` 和 `b` 是实数部分，`i` 是虚数单位。
+2. **矩阵**：矩阵通常使用方括号或大括号来表示，例如：
+   ```latex
+   \begin{bmatrix}
+   a & b \\
+   c & d
+   \end{bmatrix}
+   ```
+   或者
+   ```latex
+   \begin{Bmatrix}
+   a & b \\
+   c & d
+   \end{Bmatrix}
+   ```
+   这里的 `a`, `b`, `c`, `d` 是矩阵的元素。
+3. **向量**：向量通常使用粗体或箭头字体来表示，例如：
+   使用 `\mathbf` 命令：
+   ```latex
+   \mathbf{v} = \begin{bmatrix}
+   v_1 \\
+   v_2 \\
+   \vdots \\
+   v_n
+   \end{bmatrix}
+   ```
+   或者使用 `\vec` 命令：
+   ```latex
+   \vec{v} = \begin{bmatrix}
+   v_1 \\
+   v_2 \\
+   \vdots \\
+   v_n
+   \end{bmatrix}
+   ```
+   这里的 `v_1`, `v_2`, ..., `v_n` 是向量的分量。
+在实际的LaTeX文档中，你可能需要使用相应的宏包来启用这些字体命令。例如，使用 `\mathbf` 需要加载 `amsmath` 宏包，而 `\vec` 命令通常是在默认的LaTeX数学模式下可用的。
+请注意，LaTeX中的字体选择可能会根据文档类和使用的宏包有所不同。如果你需要使用特定的字体，你可能需要查看相关的LaTeX文档或宏包文档来了解如何正确地使用它们。
 
 附：
 
@@ -28,8 +72,8 @@ $$\boldsymbol{E} \in \mathbb{R}^{n \times d_\text{model}}$$
    - **向量**：向量是一个具有大小和方向的量，通常用一个小写字母加上一个箭头（如 $\vec{v}$）或者粗体字母（如 $\mathbf{v}$）来表示。向量可以在一个或多个维度上表示，其维度称为向量的阶或长度。
    - **矩阵**：矩阵是一个由数字或符号组成的二维数组，通常用一个大写字母（如 $A$）来表示。矩阵有行和列，其大小由行数和列数决定，记作 $m \times n$ 矩阵，其中 $m$ 是行数，$n$ 是列数。
 2. **表示方式**：
-   - **向量**：向量通常表示为一列或一行数字，例如 $\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}$ 或 $ \mathbf{v} = [v_1, v_2, \ldots, v_n] $。
-   - **矩阵**：矩阵表示为矩形阵列，例如 $ A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} \end{bmatrix} $。
+   - **向量**：向量通常表示为一列或一行数字，例如 $\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}$ 或 $\mathbf{v} = [v_1, v_2, \ldots, v_n]$。
+   - **矩阵**：矩阵表示为矩形阵列，例如 $A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} \end{bmatrix}$。
 3. **操作**：
    - **向量**：向量可以进行加法、减法、标量乘法、点积和向量积等操作。
    - **矩阵**：矩阵可以进行加法、减法、标量乘法、矩阵乘法、转置、求逆等操作。
