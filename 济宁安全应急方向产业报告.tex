@@ -1,0 +1,98 @@
+
+\documentclass[UTF8,twocolumn]{ctexart}
+\usepackage{hyperref}%用于识别autoref
+\usepackage[margin=1in]{geometry} % 设置所有边距为1英寸
+\usepackage{indentfirst} %首行缩进
+\usepackage{longtable}% 导入跨页表格所需宏包
+\usepackage{booktabs}%引入跨页三线
+\usepackage{multirow}
+\usepackage{caption} %设置图或者表的标题
+\usepackage{multicol}
+\usepackage{lipsum} %用来生成占位文本
+\usepackage{pgfplots}%用来画折现图
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{xcolor} % 用于定义颜色 % 定义颜色
+\definecolor{headerfootercolor}{RGB}{187,51,24} % 红色
+\usepackage{fancyhdr} % 设置页眉和页脚样式
+\pagestyle{fancy}
+\fancyhf{} % 清除现有的页眉和页脚设置
+\fancyhead[R]{\includegraphics[height=0.6cm]{./pic/logo.png}} % 左侧页眉插入logo
+\fancyfoot[C]{
+  \begin{minipage}{\textwidth}
+    \centering
+    \footnotesize\textcolor{gray}{合享汇智集团}\\
+    \footnotesize\textcolor{gray}{北京市海淀区北四环西路52号方正国际大厦804}\\
+    \footnotesize\textcolor{gray}{电话：010-82092128  邮编：100080  网址：incoshare.com}
+  \end{minipage}
+  }
+\fancyfoot[R]{\textcolor{black}\thepage} % 中间页脚，显示页码
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\color{headerfootercolor}\hrule width\headwidth height\headrulewidth \vskip1pt \hrule width\headwidth height\headrulewidth}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\footrule}{\color{headerfootercolor}\rule{\textwidth}{\footrulewidth}}
+
+
+\begin{document}
+\title{杭州人工智能产业报告}
+\author{产业AI助手}
+\twocolumn[
+\begin{@twocolumnfalse}%全局双栏中部分单栏，非常重要
+\maketitle
+
+
+济宁安全应急产业发展势头强劲，企业数量持续增长。截至目前，济宁市安全应急方向的企业数量达到1837家，其中上市企业有362家，小巨人企业478家，科创企业997家。近年来，济宁安全应急产业呈现高速增长态势，近五年来企业数量增长情况如下：2017年增长7家，2018年增长251家，2019年增长727家，2020年增长744家，2021年增长849家。这充分展示了济宁安全应急产业的活力与发展潜力。
+\section{安全应急方向济宁企业以及分属类别}
+表\ref{表:安全应急方向济宁企业以及分属类别}显示了杭州市人工智能企业按照不同类型的数量统计，从表\ref{tab:安全应急方向济宁企业以及分属类别}可以看出：
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{c | c}
+      \toprule
+      企业类型 & 数量 + \\
+          安全应急方向济宁的企业数量 & 1837\\
+      \midrule
+      安全应急方向济宁上市的企业数量 & 362\\
+      \midrule
+      安全应急方向济宁小巨人的企业数量 & 478\\
+      \midrule
+      安全应急方向济宁科创的企业数量 & 997\\
+      \bottomrule
+
+  \end{tabular}
+  \caption{title}
+  \label{表:安全应急方向济宁企业以及分属类别}
+\end{table}
+    根据数据显示，济宁在安全应急领域的企业数量达到了1837家，这表明济宁市政府对安全应急产业的高度重视和大力扶持，同时说明济宁在安全应急产业方面具有较强的产业基础和发展潜力。其中，上市企业数量为362家，这些企业不仅在资本市场上崭露头角，而且在技术研发、市场开拓、行业引领等方面具备较强的实力，对整个产业的发展起到了良好的示范和带动作用。此外，小巨人企业数量为478家，这些企业具有较高的成长性、创新性和市场竞争力，是济宁安全应急产业的中坚力量。而科技创新企业数量为997家，这些企业以技术创新为核心，是推动产业转型升级的重要力量。总体来看，济宁安全应急产业的企业数量分布合理，具有较好的发展均衡性，有望打造成为我国安全应急产业的重要基地。
+\section{济宁安全应急方向近五年增长情况}
+图\ref{fig:济宁安全应急方向近五年增长情况}是济宁安全应急方向企业近五年的增长情况，从中我们可以进行以下几点分析：
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+    \begin{axis}[
+      title={济宁安全应急方向近五年增长情况},
+      xlabel={年份},
+      ylabel={企业数量},
+      xmin=2017, xmax=2021
+      ymin=0, ymax=933,
+      xtick={2017,2018,2019,2020,2021},
+      ytick={7,251,727,744,849},
+      legend pos=north west
+    ]
+    \addplot[
+      color=blue,
+      mark=square,
+      ]
+      coordinates {
+        %(2017,10)(2018,25)(2019,33)(2020,60)(2021,120)(2022,160)
+        (2017, 7)(2018, 251)(2019, 727)(2020, 744)(2021, 849)
+      };
+    \legend{济宁安全应急方向企业数量}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{济宁安全应急方向近五年增长情况}
+  \label{fig:济宁安全应急方向近五年增长情况}
+\end{figure}
+    济宁安全应急方向企业在过去五年中实现了显著的增长，体现了我国在安全应急领域的发展态势和重视程度。2017年，该产业增加值仅为7，然而在2018年迎来了爆发式增长，达到了251，之后每年都保持了较高的增长速度，2019年增至727，2020年达到744，2021年更是高达849。这一系列数据充分展示了济宁安全应急产业的发展潜力和活力，同时也表明了我国在应对突发公共安全事件方面的能力提升。安全应急产业作为一项涉及公共安全、人民生命财产安全的重要产业，其快速发展对于提升我国应急管理水平、构建和谐社会具有重要意义。
+\section{结语}
+济宁安全应急产业发展迅速，企业数量稳步增长。截至目前，共有1837家企业从事安全应急方向的工作，其中362家上市公司，478家被认定为小巨人，997家属于科创企业。近年来，济宁安全应急产业呈现显著增长态势，近五年增长率分别为7、251、727、744和849，显示出该产业强大的发展潜力和市场活力。
+
+\end{document}

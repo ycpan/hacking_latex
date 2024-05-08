@@ -70,7 +70,6 @@ $$\boldsymbol{E} \in \mathbb{R}^{n \times d_\text{model}}$$
    ```
    这也将产生一个粗体的 `v` 来表示矢量。
 #### 3.4. **使用 `bm` 宏包**：
-   这个还没尝试
    如果你需要更多的控制权，可以使用 `bm` 宏包，它提供了 `\bm` 命令，可以用来加粗任何数学符号。例如：
    ```latex
    \usepackage{bm}
