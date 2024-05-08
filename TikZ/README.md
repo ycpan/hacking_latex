@@ -13,6 +13,10 @@ This collection could not have been made possible without the help of the follow
 * [TeXample](http://www.texample.net); the figures from here often provide a solid starting point.
 * [LaTeX Stack Exchange](http://tex.stackexchange.com); threads from here are typically the first results that pop up when googling for a particular technique/problem.
 
+## 已测试
+* [tiny_example](./tiny_example)
+
+
 ## License
 
 MIT
